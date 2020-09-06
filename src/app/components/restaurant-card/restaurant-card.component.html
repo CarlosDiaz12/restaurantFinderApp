@@ -1,0 +1,11 @@
+
+<div class="card res-card shadow p-1 mb-5 bg-white rounded">
+  <img height="185px" src="{{ restaurant.image_url }}" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title texto">{{ restaurant.name }}</h5>
+    <p class="card-text texto">{{ restaurant.address }}, {{ restaurant.city }}</p>
+    <p class="card-text"><b>Phone: </b> {{ restaurant.phone }}</p>
+    <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+    <a class="btn btn-success btn-block text-white" [routerLink]="['/details', restaurant.id]">Details</a>
+  </div>
+</div>
